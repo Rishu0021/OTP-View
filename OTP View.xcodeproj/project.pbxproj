@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F891710F24DE994E0078B80C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F891710E24DE994E0078B80C /* AppDelegate.swift */; };
+		F891711124DE994E0078B80C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F891711024DE994E0078B80C /* SceneDelegate.swift */; };
+		F891711324DE994E0078B80C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F891711224DE994E0078B80C /* ViewController.swift */; };
+		F891711624DE994E0078B80C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F891711424DE994E0078B80C /* Main.storyboard */; };
+		F891711924DE994E0078B80C /* OTP_View.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F891711724DE994E0078B80C /* OTP_View.xcdatamodeld */; };
+		F891711B24DE994F0078B80C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F891711A24DE994F0078B80C /* Assets.xcassets */; };
+		F891711E24DE994F0078B80C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F891711C24DE994F0078B80C /* LaunchScreen.storyboard */; };
+		F891712924DE994F0078B80C /* OTP_ViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F891712824DE994F0078B80C /* OTP_ViewTests.swift */; };
+		F891713424DE994F0078B80C /* OTP_ViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F891713324DE994F0078B80C /* OTP_ViewUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F891712524DE994F0078B80C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F891710324DE994E0078B80C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F891710A24DE994E0078B80C;
+			remoteInfo = "OTP View";
+		};
+		F891713024DE994F0078B80C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F891710324DE994E0078B80C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F891710A24DE994E0078B80C;
+			remoteInfo = "OTP View";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F891710B24DE994E0078B80C /* OTP View.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OTP View.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F891710E24DE994E0078B80C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F891711024DE994E0078B80C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F891711224DE994E0078B80C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F891711524DE994E0078B80C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F891711824DE994E0078B80C /* OTP_View.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OTP_View.xcdatamodel; sourceTree = "<group>"; };
+		F891711A24DE994F0078B80C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F891711D24DE994F0078B80C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F891711F24DE994F0078B80C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F891712424DE994F0078B80C /* OTP ViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OTP ViewTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F891712824DE994F0078B80C /* OTP_ViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTP_ViewTests.swift; sourceTree = "<group>"; };
+		F891712A24DE994F0078B80C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F891712F24DE994F0078B80C /* OTP ViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OTP ViewUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F891713324DE994F0078B80C /* OTP_ViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTP_ViewUITests.swift; sourceTree = "<group>"; };
+		F891713524DE994F0078B80C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F891710824DE994E0078B80C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F891712124DE994F0078B80C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F891712C24DE994F0078B80C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F891710224DE994E0078B80C = {
+			isa = PBXGroup;
+			children = (
+				F891710D24DE994E0078B80C /* OTP View */,
+				F891712724DE994F0078B80C /* OTP ViewTests */,
+				F891713224DE994F0078B80C /* OTP ViewUITests */,
+				F891710C24DE994E0078B80C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F891710C24DE994E0078B80C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F891710B24DE994E0078B80C /* OTP View.app */,
+				F891712424DE994F0078B80C /* OTP ViewTests.xctest */,
+				F891712F24DE994F0078B80C /* OTP ViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F891710D24DE994E0078B80C /* OTP View */ = {
+			isa = PBXGroup;
+			children = (
+				F891710E24DE994E0078B80C /* AppDelegate.swift */,
+				F891711024DE994E0078B80C /* SceneDelegate.swift */,
+				F891711224DE994E0078B80C /* ViewController.swift */,
+				F891711424DE994E0078B80C /* Main.storyboard */,
+				F891711A24DE994F0078B80C /* Assets.xcassets */,
+				F891711C24DE994F0078B80C /* LaunchScreen.storyboard */,
+				F891711F24DE994F0078B80C /* Info.plist */,
+				F891711724DE994E0078B80C /* OTP_View.xcdatamodeld */,
+			);
+			path = "OTP View";
+			sourceTree = "<group>";
+		};
+		F891712724DE994F0078B80C /* OTP ViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				F891712824DE994F0078B80C /* OTP_ViewTests.swift */,
+				F891712A24DE994F0078B80C /* Info.plist */,
+			);
+			path = "OTP ViewTests";
+			sourceTree = "<group>";
+		};
+		F891713224DE994F0078B80C /* OTP ViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F891713324DE994F0078B80C /* OTP_ViewUITests.swift */,
+				F891713524DE994F0078B80C /* Info.plist */,
+			);
+			path = "OTP ViewUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F891710A24DE994E0078B80C /* OTP View */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F891713824DE994F0078B80C /* Build configuration list for PBXNativeTarget "OTP View" */;
+			buildPhases = (
+				F891710724DE994E0078B80C /* Sources */,
+				F891710824DE994E0078B80C /* Frameworks */,
+				F891710924DE994E0078B80C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OTP View";
+			productName = "OTP View";
+			productReference = F891710B24DE994E0078B80C /* OTP View.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F891712324DE994F0078B80C /* OTP ViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F891713B24DE994F0078B80C /* Build configuration list for PBXNativeTarget "OTP ViewTests" */;
+			buildPhases = (
+				F891712024DE994F0078B80C /* Sources */,
+				F891712124DE994F0078B80C /* Frameworks */,
+				F891712224DE994F0078B80C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F891712624DE994F0078B80C /* PBXTargetDependency */,
+			);
+			name = "OTP ViewTests";
+			productName = "OTP ViewTests";
+			productReference = F891712424DE994F0078B80C /* OTP ViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F891712E24DE994F0078B80C /* OTP ViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F891713E24DE994F0078B80C /* Build configuration list for PBXNativeTarget "OTP ViewUITests" */;
+			buildPhases = (
+				F891712B24DE994F0078B80C /* Sources */,
+				F891712C24DE994F0078B80C /* Frameworks */,
+				F891712D24DE994F0078B80C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F891713124DE994F0078B80C /* PBXTargetDependency */,
+			);
+			name = "OTP ViewUITests";
+			productName = "OTP ViewUITests";
+			productReference = F891712F24DE994F0078B80C /* OTP ViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F891710324DE994E0078B80C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Rishu Gupta";
+				TargetAttributes = {
+					F891710A24DE994E0078B80C = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					F891712324DE994F0078B80C = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = F891710A24DE994E0078B80C;
+					};
+					F891712E24DE994F0078B80C = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = F891710A24DE994E0078B80C;
+					};
+				};
+			};
+			buildConfigurationList = F891710624DE994E0078B80C /* Build configuration list for PBXProject "OTP View" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F891710224DE994E0078B80C;
+			productRefGroup = F891710C24DE994E0078B80C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F891710A24DE994E0078B80C /* OTP View */,
+				F891712324DE994F0078B80C /* OTP ViewTests */,
+				F891712E24DE994F0078B80C /* OTP ViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F891710924DE994E0078B80C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F891711E24DE994F0078B80C /* LaunchScreen.storyboard in Resources */,
+				F891711B24DE994F0078B80C /* Assets.xcassets in Resources */,
+				F891711624DE994E0078B80C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F891712224DE994F0078B80C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F891712D24DE994F0078B80C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F891710724DE994E0078B80C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F891711324DE994E0078B80C /* ViewController.swift in Sources */,
+				F891710F24DE994E0078B80C /* AppDelegate.swift in Sources */,
+				F891711924DE994E0078B80C /* OTP_View.xcdatamodeld in Sources */,
+				F891711124DE994E0078B80C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F891712024DE994F0078B80C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F891712924DE994F0078B80C /* OTP_ViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F891712B24DE994F0078B80C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F891713424DE994F0078B80C /* OTP_ViewUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F891712624DE994F0078B80C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F891710A24DE994E0078B80C /* OTP View */;
+			targetProxy = F891712524DE994F0078B80C /* PBXContainerItemProxy */;
+		};
+		F891713124DE994F0078B80C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F891710A24DE994E0078B80C /* OTP View */;
+			targetProxy = F891713024DE994F0078B80C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F891711424DE994E0078B80C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F891711524DE994E0078B80C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F891711C24DE994F0078B80C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F891711D24DE994F0078B80C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F891713624DE994F0078B80C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F891713724DE994F0078B80C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F891713924DE994F0078B80C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CJBQCSTM9M;
+				INFOPLIST_FILE = "OTP View/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rishu.OTP-View";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F891713A24DE994F0078B80C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CJBQCSTM9M;
+				INFOPLIST_FILE = "OTP View/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rishu.OTP-View";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F891713C24DE994F0078B80C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CJBQCSTM9M;
+				INFOPLIST_FILE = "OTP ViewTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rishu.OTP-ViewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OTP View.app/OTP View";
+			};
+			name = Debug;
+		};
+		F891713D24DE994F0078B80C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CJBQCSTM9M;
+				INFOPLIST_FILE = "OTP ViewTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rishu.OTP-ViewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OTP View.app/OTP View";
+			};
+			name = Release;
+		};
+		F891713F24DE994F0078B80C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CJBQCSTM9M;
+				INFOPLIST_FILE = "OTP ViewUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rishu.OTP-ViewUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "OTP View";
+			};
+			name = Debug;
+		};
+		F891714024DE994F0078B80C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CJBQCSTM9M;
+				INFOPLIST_FILE = "OTP ViewUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rishu.OTP-ViewUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "OTP View";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F891710624DE994E0078B80C /* Build configuration list for PBXProject "OTP View" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F891713624DE994F0078B80C /* Debug */,
+				F891713724DE994F0078B80C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F891713824DE994F0078B80C /* Build configuration list for PBXNativeTarget "OTP View" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F891713924DE994F0078B80C /* Debug */,
+				F891713A24DE994F0078B80C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F891713B24DE994F0078B80C /* Build configuration list for PBXNativeTarget "OTP ViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F891713C24DE994F0078B80C /* Debug */,
+				F891713D24DE994F0078B80C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F891713E24DE994F0078B80C /* Build configuration list for PBXNativeTarget "OTP ViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F891713F24DE994F0078B80C /* Debug */,
+				F891714024DE994F0078B80C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F891711724DE994E0078B80C /* OTP_View.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F891711824DE994E0078B80C /* OTP_View.xcdatamodel */,
+			);
+			currentVersion = F891711824DE994E0078B80C /* OTP_View.xcdatamodel */;
+			path = OTP_View.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F891710324DE994E0078B80C /* Project object */;
+}
