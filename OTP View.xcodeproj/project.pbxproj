@@ -16,6 +16,12 @@
 		F891711E24DE994F0078B80C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F891711C24DE994F0078B80C /* LaunchScreen.storyboard */; };
 		F891712924DE994F0078B80C /* OTP_ViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F891712824DE994F0078B80C /* OTP_ViewTests.swift */; };
 		F891713424DE994F0078B80C /* OTP_ViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F891713324DE994F0078B80C /* OTP_ViewUITests.swift */; };
+		F891714524DE9A240078B80C /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F891714224DE9A240078B80C /* UIStackView+Extension.swift */; };
+		F891714624DE9A240078B80C /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F891714324DE9A240078B80C /* UIView+Extension.swift */; };
+		F891714724DE9A240078B80C /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F891714424DE9A240078B80C /* Theme.swift */; };
+		F891714B24DE9A4F0078B80C /* RGOTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F891714924DE9A4F0078B80C /* RGOTPView.swift */; };
+		F891714C24DE9A4F0078B80C /* RGOTPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F891714A24DE9A4F0078B80C /* RGOTPTextField.swift */; };
+		F891714E24DE9A740078B80C /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F891714D24DE9A740078B80C /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,12 @@
 		F891712F24DE994F0078B80C /* OTP ViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OTP ViewUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F891713324DE994F0078B80C /* OTP_ViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTP_ViewUITests.swift; sourceTree = "<group>"; };
 		F891713524DE994F0078B80C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F891714224DE9A240078B80C /* UIStackView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
+		F891714324DE9A240078B80C /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		F891714424DE9A240078B80C /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		F891714924DE9A4F0078B80C /* RGOTPView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGOTPView.swift; sourceTree = "<group>"; };
+		F891714A24DE9A4F0078B80C /* RGOTPTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGOTPTextField.swift; sourceTree = "<group>"; };
+		F891714D24DE9A740078B80C /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +113,13 @@
 		F891710D24DE994E0078B80C /* OTP View */ = {
 			isa = PBXGroup;
 			children = (
+				F891714824DE9A340078B80C /* Custom Components */,
+				F891714124DE9A0B0078B80C /* Utilities */,
 				F891710E24DE994E0078B80C /* AppDelegate.swift */,
 				F891711024DE994E0078B80C /* SceneDelegate.swift */,
 				F891711224DE994E0078B80C /* ViewController.swift */,
 				F891711424DE994E0078B80C /* Main.storyboard */,
+				F891714D24DE9A740078B80C /* Colors.xcassets */,
 				F891711A24DE994F0078B80C /* Assets.xcassets */,
 				F891711C24DE994F0078B80C /* LaunchScreen.storyboard */,
 				F891711F24DE994F0078B80C /* Info.plist */,
@@ -129,6 +144,25 @@
 				F891713524DE994F0078B80C /* Info.plist */,
 			);
 			path = "OTP ViewUITests";
+			sourceTree = "<group>";
+		};
+		F891714124DE9A0B0078B80C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F891714424DE9A240078B80C /* Theme.swift */,
+				F891714224DE9A240078B80C /* UIStackView+Extension.swift */,
+				F891714324DE9A240078B80C /* UIView+Extension.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		F891714824DE9A340078B80C /* Custom Components */ = {
+			isa = PBXGroup;
+			children = (
+				F891714A24DE9A4F0078B80C /* RGOTPTextField.swift */,
+				F891714924DE9A4F0078B80C /* RGOTPView.swift */,
+			);
+			path = "Custom Components";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F891711E24DE994F0078B80C /* LaunchScreen.storyboard in Resources */,
+				F891714E24DE9A740078B80C /* Colors.xcassets in Resources */,
 				F891711B24DE994F0078B80C /* Assets.xcassets in Resources */,
 				F891711624DE994E0078B80C /* Main.storyboard in Resources */,
 			);
@@ -262,10 +297,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F891714624DE9A240078B80C /* UIView+Extension.swift in Sources */,
+				F891714B24DE9A4F0078B80C /* RGOTPView.swift in Sources */,
 				F891711324DE994E0078B80C /* ViewController.swift in Sources */,
 				F891710F24DE994E0078B80C /* AppDelegate.swift in Sources */,
 				F891711924DE994E0078B80C /* OTP_View.xcdatamodeld in Sources */,
+				F891714C24DE9A4F0078B80C /* RGOTPTextField.swift in Sources */,
+				F891714524DE9A240078B80C /* UIStackView+Extension.swift in Sources */,
 				F891711124DE994E0078B80C /* SceneDelegate.swift in Sources */,
+				F891714724DE9A240078B80C /* Theme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

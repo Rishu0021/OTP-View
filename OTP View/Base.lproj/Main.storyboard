@@ -1,24 +1,139 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Dzj-1B-XKk">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="hOZ-v3-Dh0">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController storyboardIdentifier="ViewController" id="Dzj-1B-XKk" customClass="ViewController" customModule="OTP_View" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DeG-CH-baA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="fGJ-yP-SdL" userLabel="Stack View Title">
+                                <rect key="frame" x="32" y="244" width="350" height="32"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hSH-dp-mZB" userLabel="View Line" customClass="VFGradientView" customModule="OTP_View" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="15.5" width="115" height="1"/>
+                                        <color key="backgroundColor" name="PrimaryColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="HvZ-TG-WiR"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                                <color key="value" name="SecondaryColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                                <color key="value" name="PrimaryColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter OTP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Cz-ZG-qfA" customClass="VFLabelExtraLarge" customModule="OTP_View" customModuleProvider="target">
+                                        <rect key="frame" x="131" y="0.0" width="88" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="lcL-ZI-5Ii"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" name="TextPrimaryColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pYq-ct-KWV" userLabel="View Line" customClass="VFGradientView" customModule="OTP_View" customModuleProvider="target">
+                                        <rect key="frame" x="235" y="15.5" width="115" height="1"/>
+                                        <color key="backgroundColor" name="PrimaryColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="kgx-ra-iI2"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                                <color key="value" name="SecondaryColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                                <color key="value" name="PrimaryColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="hSH-dp-mZB" firstAttribute="width" secondItem="pYq-ct-KWV" secondAttribute="width" id="SUz-yG-QXv"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yi8-dW-htB" userLabel="View OTP" customClass="RGOTPView" customModule="OTP_View" customModuleProvider="target">
+                                <rect key="frame" x="32" y="292" width="350" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Fzg-Qp-Cjp"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="numberOfFields">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fieldWidth">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="osT-tP-wGO">
+                                <rect key="frame" x="140.5" y="442" width="133" height="40"/>
+                                <color key="backgroundColor" name="ButtonBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="eCw-b8-IPh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="0.0" maxX="40" maxY="0.0"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="topRightBezel" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="bottomLeftBezel" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonHandlerSubmit:" destination="Dzj-1B-XKk" eventType="touchUpInside" id="kgp-RY-mXz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="osT-tP-wGO" firstAttribute="top" secondItem="Yi8-dW-htB" secondAttribute="bottom" constant="100" id="4A2-Zn-FS9"/>
+                            <constraint firstItem="Yi8-dW-htB" firstAttribute="top" secondItem="fGJ-yP-SdL" secondAttribute="bottom" constant="16" id="CTj-99-PEc"/>
+                            <constraint firstItem="SVk-fw-hPl" firstAttribute="trailing" secondItem="fGJ-yP-SdL" secondAttribute="trailing" constant="32" id="MLc-xE-kf4"/>
+                            <constraint firstItem="SVk-fw-hPl" firstAttribute="trailing" secondItem="Yi8-dW-htB" secondAttribute="trailing" constant="32" id="QnV-Qr-BJC"/>
+                            <constraint firstItem="fGJ-yP-SdL" firstAttribute="leading" secondItem="SVk-fw-hPl" secondAttribute="leading" constant="32" id="dSr-aj-FzK"/>
+                            <constraint firstItem="Yi8-dW-htB" firstAttribute="leading" secondItem="SVk-fw-hPl" secondAttribute="leading" constant="32" id="dmN-oN-Md9"/>
+                            <constraint firstItem="osT-tP-wGO" firstAttribute="centerX" secondItem="DeG-CH-baA" secondAttribute="centerX" id="h18-FH-ZqK"/>
+                            <constraint firstItem="fGJ-yP-SdL" firstAttribute="top" secondItem="SVk-fw-hPl" secondAttribute="top" constant="200" id="qQA-k2-cKB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SVk-fw-hPl"/>
                     </view>
+                    <navigationItem key="navigationItem" id="325-NI-ZhO"/>
+                    <connections>
+                        <outlet property="buttonSubmit" destination="osT-tP-wGO" id="sqF-dn-2yo"/>
+                        <outlet property="viewOTP" destination="Yi8-dW-htB" id="bYx-Ib-olT"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jAa-yc-OTV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1833.75" y="-133.09859154929578"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="ButtonBackgroundColor">
+            <color red="0.8059999942779541" green="0.80699998140335083" blue="0.8059999942779541" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="PrimaryColor">
+            <color red="0.93500000238418579" green="0.24199999868869781" blue="0.3529999852180481" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SecondaryColor">
+            <color red="0.94999998807907104" green="0.42599999904632568" blue="0.13400000333786011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextPrimaryColor">
+            <color red="0.25999999046325684" green="0.25999999046325684" blue="0.25999999046325684" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
