@@ -1,6 +1,8 @@
 # OTP-View
 
-Fully customisable fields with set border for active & inactive fields, show or hide shadows, option to set rounded corners for all side  
+Fully customisable OTP View with set number of pin box, border color, add shadow and rounded corners for pin box, set errors indication etc. 
+
+
 
 # Prerequisites
 - iOS 12 or later
